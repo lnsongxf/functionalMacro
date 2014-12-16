@@ -1,4 +1,4 @@
-baseurl = "http://spencerlyon2.github.io"
+baseurl = "http://functionalmacro.com"
 languageCode = "en-us"
 title = "Functional Macro"
 disqusShortname = "functionalmacro"
@@ -7,6 +7,7 @@ pygmentsstyle = "monokai"
 [params]
     sidebartitle = "Functional Macro"
     sidebartagline = "Functional programming for macroeconomists"
+
 
 [[menu.main]]
     name = "Blog"

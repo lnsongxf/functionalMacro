@@ -11,19 +11,20 @@ authorlinkedin = "https://www.linkedin.com/profile/view?id=148582461&trk=nav_res
 
 Wow, how does this work?
 
-{{% highlight haskell %}}
-fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
-{{% /highlight %}}
+```python
+def foo(x):
+    return 2 * x + 1
+```
 
-{{% highlight tex %}}
-\NeedsTeXFormat{LaTeX2e}
-\ProvidesPackage{Sweave}{}
+```julia
+function foo(x)
+    return 2x + 1
+end
+```
 
-\RequirePackage{ifthen}
-\newboolean{Sweave@gin}
-\setboolean{Sweave@gin}{true}
-\newboolean{Sweave@ae}
-\setboolean{Sweave@ae}{false} %% Set this boolean to false to prevent the outmoded ae package being loaded by default below (kjh)
-{{% /highlight %}}
+
+```haskell
+fibs = 0:1:zipWith (+) fibs (tail fibs)
+```
 
 {{% gist e572b28c9a0eef0b2763 %}}
