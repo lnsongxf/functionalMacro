@@ -44,7 +44,7 @@
   <link href="" rel="alternate" type="application/rss+xml" title="Functional Macro" />
 
   
-  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow-night-bright.min.css">
+  <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/tomorrow.min.css">
   <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
 
@@ -86,7 +86,7 @@
         <a href="https://www.linkedin.com/profile/view?id=148582461&amp;trk=nav_responsive_tab_profile_pic" target="_blank"><i class='fa fa-linkedin'></i></a>
         
       
-      
+
     </div>
     
 
@@ -145,20 +145,17 @@
 
             <p>Wow, how does this work?</p>
 
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%"><span style="color: #f92672">&lt;</span><span style="color: #f8f8f2">p</span><span style="color: #f92672">&gt;</span><span style="color: #f8f8f2">fibs</span> <span style="color: #f92672">=</span> <span style="color: #ae81ff">0</span> <span style="color: #66d9ef">:</span> <span style="color: #ae81ff">1</span> <span style="color: #66d9ef">:</span> <span style="color: #f8f8f2">zipWith</span> <span style="color: #f8f8f2">(</span><span style="color: #f92672">+</span><span style="color: #f8f8f2">)</span> <span style="color: #f8f8f2">fibs</span> <span style="color: #f8f8f2">(tail</span> <span style="color: #f8f8f2">fibs)</span><span style="color: #f92672">&lt;/</span><span style="color: #f8f8f2">p</span><span style="color: #f92672">&gt;</span>
-</pre></div>
+<pre><code class="language-python">def foo(x):
+    return 2 * x + 1
+</code></pre>
 
+<pre><code class="language-julia">function foo(x)
+    return 2x + 1
+end
+</code></pre>
 
-<div class="highlight" style="background: #272822"><pre style="line-height: 125%">&lt;p&gt;<span style="color: #66d9ef">\NeedsTeXFormat</span><span style="color: #f8f8f2">{</span>LaTeX2e<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">\ProvidesPackage</span><span style="color: #f8f8f2">{</span>Sweave<span style="color: #f8f8f2">}{}</span>&lt;/p&gt;
-
-&lt;p&gt;<span style="color: #66d9ef">\RequirePackage</span><span style="color: #f8f8f2">{</span>ifthen<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">\newboolean</span><span style="color: #f8f8f2">{</span>Sweave@gin<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">\setboolean</span><span style="color: #f8f8f2">{</span>Sweave@gin<span style="color: #f8f8f2">}{</span>true<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">\newboolean</span><span style="color: #f8f8f2">{</span>Sweave@ae<span style="color: #f8f8f2">}</span>
-<span style="color: #66d9ef">\setboolean</span><span style="color: #f8f8f2">{</span>Sweave@ae<span style="color: #f8f8f2">}{</span>false<span style="color: #f8f8f2">}</span> <span style="color: #75715e">%% Set this boolean to false to prevent the outmoded ae package being loaded by default below (kjh)&lt;/p&gt;</span>
-</pre></div>
-
+<pre><code class="language-haskell">fibs = 0:1:zipWith (+) fibs (tail fibs)
+</code></pre>
 
 <script src="https://gist.github.com/e572b28c9a0eef0b2763.js"></script>
 
@@ -210,8 +207,9 @@
 		</ul>
 	</div>
 
-	<p>&copy; 2014. All rights reserved. </p>
+	<p>&copy; 2014. Spencer Lyon. All rights reserved. </p>
 </div>
+
     </div>
   </div>
 	

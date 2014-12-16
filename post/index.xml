@@ -19,20 +19,17 @@
       <guid>http://localhost:1313/post/2014/12/15/first/</guid>
       <description>&lt;p&gt;Wow, how does this work?&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;fibs&lt;/span&gt; &lt;span style=&#34;color: #f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #ae81ff&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #66d9ef&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;zipWith&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;fibs&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;(tail&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;fibs)&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;lt;/&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;p&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def foo(x):
+    return 2 * x + 1
+&lt;/code&gt;&lt;/pre&gt;
 
+&lt;pre&gt;&lt;code class=&#34;language-julia&#34;&gt;function foo(x)
+    return 2x + 1
+end
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&amp;lt;p&amp;gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;\NeedsTeXFormat&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;LaTeX2e&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;\ProvidesPackage&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;Sweave&lt;span style=&#34;color: #f8f8f2&#34;&gt;}{}&lt;/span&gt;&amp;lt;/p&amp;gt;
-
-&amp;lt;p&amp;gt;&lt;span style=&#34;color: #66d9ef&#34;&gt;\RequirePackage&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;ifthen&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;\newboolean&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;Sweave@gin&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;\setboolean&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;Sweave@gin&lt;span style=&#34;color: #f8f8f2&#34;&gt;}{&lt;/span&gt;true&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;\newboolean&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;Sweave@ae&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;span style=&#34;color: #66d9ef&#34;&gt;\setboolean&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;Sweave@ae&lt;span style=&#34;color: #f8f8f2&#34;&gt;}{&lt;/span&gt;false&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt; &lt;span style=&#34;color: #75715e&#34;&gt;%% Set this boolean to false to prevent the outmoded ae package being loaded by default below (kjh)&amp;lt;/p&amp;gt;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
+&lt;pre&gt;&lt;code class=&#34;language-haskell&#34;&gt;fibs = 0:1:zipWith (+) fibs (tail fibs)
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;script src=&#34;https://gist.github.com/e572b28c9a0eef0b2763.js&#34;&gt;&lt;/script&gt;
 
