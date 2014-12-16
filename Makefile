@@ -3,5 +3,5 @@ dev:
 	open http://localhost:1313
 
 publish:
-	hugo  --buildDrafts=false --buildFuture=false
+	hugo --theme=redlounge --buildDrafts=false --buildFuture=false
 	ghp-import -n -p public
