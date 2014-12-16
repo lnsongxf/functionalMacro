@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Functional Macro</title>
-    <link>http://spencerlyon2.github.io/functionalMacro/</link>
+    <link>http://spencerlyon2.github.io/</link>
     <description>Recent content on Functional Macro</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
     
     <lastBuildDate>Mon, 01 Jan 0001 00:00:00 UTC</lastBuildDate>
-    <atom:link href="http://spencerlyon2.github.io/functionalMacro/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://spencerlyon2.github.io/index.xml" rel="self" type="application/rss+xml" />
     
   </channel>
 </rss>
